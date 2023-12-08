@@ -1,0 +1,30 @@
+$btn-blue-color: rgb(61, 92, 148);
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    // justify-content: space-between;
+    width: 100%;
+    // border: 1px solid gray;
+    border-bottom: 0;
+    padding: 1%;
+}
+
+.filters > div{
+    margin-left: 2%;
+    vertical-align: middle;
+    justify-content: start;
+}
+
+.filterbtn {
+    background-color: $btn-blue-color;
+    border: none;
+}
+
+.filterbtn:hover{
+    border: 1px solid $btn-blue-color;
+    background-color: transparent;
+    color: $btn-blue-color;
+    transition: 0.2s ease-in;
+}

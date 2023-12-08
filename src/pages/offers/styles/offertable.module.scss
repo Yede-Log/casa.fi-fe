@@ -1,0 +1,47 @@
+$btn-color: rgb(204, 115, 64);
+
+
+.offertable{
+    width: 100%;
+}
+
+.offertable thead th {
+    background-color: rgb(233, 233, 233) !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.offertable tr{
+    text-align: center;
+    color:black;
+    vertical-align: middle;
+}
+
+.offertable table{
+    border-spacing: 0 5px !important;
+}
+
+.applybtn {
+    background-color: $btn-color;
+    color:white;
+    border-color: white;
+    box-shadow: 2px 2px lightblue;
+}
+
+.applybtn:hover{
+    background-color: transparent;
+    border-color: $btn-color;
+    color: $btn-color;
+    transition: 0.2s ease-in;
+}
+
+.showmore{
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+.showmore:hover{
+    background-color: transparent;
+    border-color: none;
+    color: black;
+}
