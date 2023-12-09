@@ -1,0 +1,27 @@
+.dropdown {
+  .dropdown-toggle {
+    &::after{
+      content: none;
+    }
+  }
+  .dropdown-menu {
+    max-width: 300px;
+  }
+}
+
+.nav-notification {
+  position: relative;
+  .new-notification {
+    height: 10px;
+    width: 10px;
+    background-color: rgba(255, 46, 46, 0.898);
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    right: 5px;
+  }
+}
+
+.notification-container {
+  padding: 0 1rem;
+}

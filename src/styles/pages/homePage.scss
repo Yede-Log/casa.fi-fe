@@ -1,0 +1,33 @@
+.hero-section {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+
+  .hero-text {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    padding-left: 1.5rem;
+    .hero-subtitle-text {
+      opacity: 0.9;
+    }
+  }
+  .email-input-form {
+    display: flex;
+    input {
+      border: 1px solid black;
+    }
+  }
+  .get-started-button {
+    margin-left: 1rem;
+    width: 9.5rem;
+  }
+  // .hero-image {
+  //   width: 100%;
+  //   height: 55vh;
+  // }
+}

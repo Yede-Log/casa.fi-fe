@@ -13,7 +13,8 @@ interface NotificationContextType {
 interface NotificationContextProviderType {
   notifications: NotificationContextType[],
   isNewNotification: boolean,
-  setIsNewNotification: React.Dispatch<React.SetStateAction<boolean>>
+  setIsNewNotification: React.Dispatch<React.SetStateAction<boolean>>,
+  pushUser: PushAPI | null
 }
 type Props = {
   children?: React.ReactNode
@@ -76,7 +77,7 @@ export const NotificationProvider: React.FC<Props> = ({ children }) => {
   }, [signer])
 
   return (
-    <NotificationContext.Provider value={{notifications, isNewNotification, setIsNewNotification }}>
+    <NotificationContext.Provider value={{notifications, isNewNotification, setIsNewNotification, pushUser }}>
       {children}
     </NotificationContext.Provider>
   )

@@ -1,0 +1,20 @@
+.header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  margin: 0 1rem;
+  // background: rgba(255, 255, 255, 0.3);
+  background: rgba(240, 175, 96, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .header-right {
+    button {
+      border: 1px solid black;
+    }
+  }
+}

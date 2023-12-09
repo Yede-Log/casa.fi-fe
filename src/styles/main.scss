@@ -1,0 +1,112 @@
+@import "./components/crazyLoader.scss";
+@import "./components/modalGetStarted.scss";
+@import "./components/header.scss";
+@import "./pages/homePage.scss";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "./components/notificationDropdown.scss";
+@import "./pages/notification.scss";
+
+
+
+body {
+  // color: aqua;
+  p {
+    // color: red;
+  }
+}
+
+// main{
+//   justify-content: center;
+//   width: 100%;
+//   max-width: 1400px;
+// }
+
+#main-div{
+  width: 80%;
+  margin-left:10%;
+  position: relative;
+  top: -60px;
+  z-index: 10;
+}
+
+.create-btn {
+  background-color: rgb(73, 95, 158) !important;
+  border: none !important;
+}
+.accept-btn {
+  background-color: red !important;
+  border: none !important;
+}
+
+.reject-btn {
+  background-color: rgb(69, 170, 99) !important;
+  border: none !important;
+}
+
+
+.main-box{
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(109, 108, 108, 0.75);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(109, 108, 108, 0.75);
+  box-shadow: 0px 0px 7px 1px rgba(109, 108, 108, 0.75); 
+  max-height: 70vh;
+  overflow-y: auto;
+  z-index: 100;
+  background-color: white;
+}
+
+thead{
+  position: sticky;
+}
+
+thead th {
+  background-color: rgb(233, 233, 233) !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  
+}
+
+tr{
+  text-align: center;
+  color:black;
+  vertical-align: middle;
+}
+
+table{
+  border-spacing: 0 5px !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c2c2c2; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a7a6a6; 
+}
+
+.breadcrumb-item a {
+  color:white !important;
+}
+
+.breadcrumb-item a:hover {
+  color:orange !important;
+}
+
+.breadcrumb-item.active::before{
+  color: white !important;
+}
+
+.breadcrumb-item.active{
+  color: white !important;
+}
