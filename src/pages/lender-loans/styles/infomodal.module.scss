@@ -1,0 +1,40 @@
+.infomodal h5{
+    color: black;
+    font-size: 1rem;
+}
+
+.infomodal p{
+    color: black;
+    font-size: 0.7rem;
+}
+
+.infomodaltitle{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.featurelist {
+    display: flex;
+    flex-direction: row;
+}
+
+.featurelistdiv {
+    padding: 5%;
+    padding-left: 0;
+    padding-top:0;
+}
+
+.featurelistdiv h4{
+    font-size: 1.1rem;
+    color: black
+}
+
+.featurelistdiv h5{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.terms {
+    color: rgb(177, 175, 175);
+    font-size: 0.8rem
+}

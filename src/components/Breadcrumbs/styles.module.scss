@@ -1,0 +1,17 @@
+.customBreadcrumb {
+    // margin-top: 1%;
+    // background-color: aquamarine;
+    padding: 2%;
+    padding-left: 10%;
+    background-color: rgb(73, 95, 158);
+    font-size: 0.9rem !important;
+    height: 150px;
+}
+
+.customBreadcrumb .breadcrumb .breadcrumb-item{
+    color:white !important;
+}
+
+.customBreadcrumb .breadcrumb-item.active{
+    color:white !important;
+}

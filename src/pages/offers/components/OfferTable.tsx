@@ -3,15 +3,16 @@ import { useState, useEffect } from "react";
 import { Table } from "react-bootstrap";
 import { OfferRow } from "./OfferRow";
 import lenderLoanService from "@/api-helpers/lenderLoan";
-
+import useUser from "@/hooks/useUser";
 import styles from "../styles/offertable.module.scss"
 
 export default function OfferTable() {
 
     const [data,setData] = useState([]);
 
+    const { userAddress } = useUser();
     const getApiData = async() => {
-        const result:any = await lenderLoanService.getAllLoanOffers();
+        const result:any = await lenderLoanService.getAllLoanOffers(userAddress);
         console.log(result);
         if(result){
             setData(result);

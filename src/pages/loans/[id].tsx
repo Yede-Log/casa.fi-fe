@@ -33,16 +33,25 @@ export default function ApplyLoan() {
                 title: "My Loans",
                 link: "/my-loans"
             }]}
-            active={loan_id}
+            active={offer_id?.toString() ?? ""}
         />
-        <main id="main-div">
+         <main id="main-div">
+            <div className="main-box p-3">
             <InfoCard 
                 data={arr_data}
             />
             <br />
-            <LoanInfo />
+            {
+                offer_id && (
+                    <LoanInfo 
+                        offer_id = {offer_id}
+                    />
+                )
+            }
+            
             <hr />
-            <RepaymentSchedule />
+            </div>
+            {/* <RepaymentSchedule /> */}
         </main>
     </>
   )

@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { Button } from 'react-bootstrap'
 import Link from 'next/link';
 // import InfoModal from './InfoModal';
+import { IoMdCheckmark } from "react-icons/io";
+import { RxCross2 } from "react-icons/rx";
 
 
 interface LaonFormProps {
@@ -39,17 +41,19 @@ export const MyLoanRow : React.FC<LaonFormProps> = ({
         <td>{accId}</td>
         <td>{lender}</td>
         <td>8th January 2023</td>
-        <td> <div className='d-flex'>
+        <td> <div className='d-flex justify-content-center'>
                 <Button
                   onClick={() => handleAcceptLoan(0)}
+                  className='accept-btn'
                   >
-                  Accept
+                  Accept &nbsp; <IoMdCheckmark />
                 </Button>
+                &emsp;
                 <Button
                   // onClick={handleShow}
-                  className='ml-2'
+                  className='ml-2 reject-btn'
                   >
-                  Reject
+                  Reject &nbsp; <RxCross2 />
                 </Button>
               </div></td>
     </tr>

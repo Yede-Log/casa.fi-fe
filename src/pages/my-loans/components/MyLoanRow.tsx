@@ -8,7 +8,8 @@ import Link from 'next/link';
 
 
 interface LaonFormProps {
-  key:Number,
+  number: String,
+  key:String,
   accId:String,  
   lender:String,
   interestRate:Number,
@@ -17,6 +18,7 @@ interface LaonFormProps {
 }
 
 export const MyLoanRow : React.FC<LaonFormProps> = ({
+  number,
   key,
   accId,  
   lender,
@@ -31,20 +33,27 @@ export const MyLoanRow : React.FC<LaonFormProps> = ({
   const handleShow = () => setShow(true);
   return (
     <tr>
-        <td>{key.toString()}</td>
+        <td>{number}</td>
         <td>{accId}</td>
         <td>{lender}</td>
         <td>{interestRate.toString()}%</td>
         <td>${amount.toString()}</td>
         <td>
-          {
-            status === "Pending" ? (
+          {/* {
+            status == "PENDING" && (
               <>Pending</>
-            ) : (
-              <Link href={"/loans/"+accId}>View</Link>
-            )
+            ) 
           }
-          
+          {
+            status == "REJECTED" && (
+              <>Rejected</>
+            )
+          }   */}
+          {/* {
+            status == "ACCEPTED" && ( */}
+              <Link href={"/loans/"+accId}>View</Link>
+            {/* )
+          } */}
         </td>
     </tr>
   )

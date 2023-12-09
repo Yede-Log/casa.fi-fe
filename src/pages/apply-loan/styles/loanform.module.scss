@@ -1,0 +1,45 @@
+$btn-color: rgb(204, 115, 64);
+
+.featurelist {
+    display: flex;
+    flex-direction: row;
+}
+
+.featurelistdiv {
+    padding: 5%;
+    padding-bottom: 2%;
+    padding-left: 0;
+    padding-top:0;
+}
+
+.featurelistdiv h4{
+    font-size: 1.1rem;
+    color: black
+}
+
+.featurelistdiv h5{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.terms {
+    // color: rgb(177, 175, 175);
+    font-size: 0.8rem;
+    // padding-left: 5%;
+}
+
+
+.applybtn {
+    background-color: $btn-color;
+    color:white;
+    border-color: white;
+    box-shadow: 2px 2px lightblue;
+    width: 200px;
+}
+
+.applybtn:hover{
+    background-color: transparent;
+    border-color: $btn-color;
+    color: $btn-color;
+    transition: 0.2s ease-in;
+}

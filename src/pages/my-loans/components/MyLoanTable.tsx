@@ -14,6 +14,7 @@ export default function MyLoansTable() {
     const { userAddress } = useUser();
 
     const getApiData = async() => {
+        
         const result:any = await lenderLoanService.getMyLoans(userAddress);
         console.log(result);
         if(result){
@@ -22,8 +23,12 @@ export default function MyLoansTable() {
         }
     }
     useEffect(()=>{
-        getApiData();
-    },[])
+        console.log(userAddress)
+        if(userAddress){
+            getApiData();
+        }
+        
+    },[userAddress])
 
     const getRows = () => {
         const result : any = [];
@@ -31,10 +36,11 @@ export default function MyLoansTable() {
         data.map((x:any,index)=>{
             result.push(
             <MyLoanRow 
-                key={index}
-                accId={x._id}
+                key={index.toString()}
+                number={index.toString()}
+                accId={x.application_id}
                 lender={x.lender}
-                interestRate={x.interestRate}
+                interestRate={x.interest_rate}
                 amount={x.amount}
                 status={x.status}
             />)

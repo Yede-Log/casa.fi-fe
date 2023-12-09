@@ -27,11 +27,13 @@ export default function ApplyLoan() {
             active={"Asset Onwer"}
         />
         <main id="main-div">
+            <div className="main-box p-3">
             <InfoCard 
                 data={arr_data}
             />
             <br />
             <MyLoansTable />
+            </div>
         </main>
     </>
   )

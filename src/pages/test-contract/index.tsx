@@ -3,6 +3,8 @@ import { useContractWrite } from 'wagmi'
 import {LoanRegistry} from '../../../contractDetails'
 import { createLoanAccount } from '../../../blockchainUtilFunction'
 import { useLoanRegistryCreateLoanAccount } from '@/generated'
+// @ts-ignore
+import chains from "chains.json"
 
 const TestContractPage = () => {
   // const { data, isLoading, isSuccess, write } = useContractWrite({
@@ -11,6 +13,7 @@ const TestContractPage = () => {
   //   functionName: 'create_loan_account',
   //   args: ['0x6BeF65D67c45505bA9BD5A747bA18Bb078E63549', '0x6BeF65D67c45505bA9BD5A747bA18Bb078E63549', '0x6BeF65D67c45505bA9BD5A747bA18Bb078E63540', 12, '0x6BeF65D67c45505bA9BD5A747bA18Bb078E63548'],
   // })
+  console.log({chains})
   const { data, isLoading, isSuccess, write, error } = useLoanRegistryCreateLoanAccount({
     args: ['0x6BeF65D67c45505bA9BD5A747bA18Bb078E63549', '0x6BeF65D67c45505bA9BD5A747bA18Bb078E63549', '0x6BeF65D67c45505bA9BD5A747bA18Bb078E63540', BigInt(12), '0x6BeF65D67c45505bA9BD5A747bA18Bb078E63548'],
   })

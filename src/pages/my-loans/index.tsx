@@ -19,7 +19,9 @@ export default function ApplyLoan() {
             active={"My Loans"}
         />
         <main id="main-div">
-            <MyLoansTable />
+            <div className="main-box p-3">
+              <MyLoansTable />
+            </div>
         </main>
     </>
   )

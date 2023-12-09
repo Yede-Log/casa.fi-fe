@@ -60,7 +60,7 @@ export const OfferRow : React.FC<InfoProps> = ({
             onClick={handleShow}
             className={styles.showmore}
           >
-            <BsFillEyeFill />
+            <BsFillEyeFill style={{"scale":"1.5"}}/>
             <br />
             Show More
           </Button>
