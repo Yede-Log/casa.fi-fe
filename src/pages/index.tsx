@@ -30,7 +30,7 @@ export default function Home() {
           <h1>Revolutionize Finance with Real Estate NFT-Backed Crypto Loans</h1>
           <h4 className='hero-subtitle-text'>Empowering Your Real Estate NFT Assets to Fuel Your Future</h4>
           <GetStarted />
-          <GetStartedAsDao />
+          {/* <GetStartedAsDao /> */}
         </div>
         <Suspense fallback={<img src="/heroImage.png" />}>
           <Spline style={{height: "55vh"}} scene="https://prod.spline.design/MVmp28EpN8o3YxIk/scene.splinecode" className='hero-image' />
